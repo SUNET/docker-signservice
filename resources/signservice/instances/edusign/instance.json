@@ -1,5 +1,5 @@
 {
-  "entityId": "https://sig.idsec.se/sigservice-dev",
+  "entityId": "https://edusign.sunet.se/sigservice",
   "keyStoreName": "instance.jks",
   "keyStorePass": "84fe823eacb01234e",
   "trustStoreName": "trustStore.jks",
@@ -7,14 +7,14 @@
   "instanceMetadata": {
     "displayName": {
       "langValues": {
-        "sv": "SUNET unserskriftstjänst för utveckling",
-        "en": "SUNET development signing service"
+        "sv": "SUNET unserskriftstjänst",
+        "en": "SUNET signing service"
       }
     },
     "description": {
       "langValues": {
-        "sv": "Utvecklingsinstans av underskriftstjänst för test och utvärdering",
-        "en": "Development instance of a signing service for test and evaluation"
+        "sv": "Underskriftstjänst för eduSign",
+        "en": "eduSign signing service"
       }
     },
     "logoList": [
@@ -47,13 +47,13 @@
         "en": "https://sunet.se"
       }
     },
-    "supContactGivenName": "Stefan",
-    "supContactSurName": "Santesson",
-    "supContactEmail": "sts@aaa-sec.com",
-    "supContactTel": "0767-861337",
-    "techContactGivenName": "Stefan",
-    "techContactSurName": "Santesson",
-    "techContactEmail": "sts@aaa-sec.com",
-    "techContactTel": "0767-861337"
+    "supContactGivenName": "John",
+    "supContactSurName": "Doe",
+    "supContactEmail": "jd@example.com",
+    "supContactTel": "070-1234567",
+    "techContactGivenName": "John",
+    "techContactSurName": "Doe",
+    "techContactEmail": "jd@example.com",
+    "techContactTel": "070-1234567"
   }
 }

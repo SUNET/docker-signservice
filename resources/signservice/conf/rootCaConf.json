@@ -5,5 +5,7 @@
   "organizationName": "Test Org AB (NOT A REAL ORGANIZATION)",
   "orgUnitName": "Central Sgining Service",
   "serialNumber": "SE091283908123",
-  "country": "SE"
+  "country": "SE",
+  "rootKsPassword": "84rFrgTe3w%",
+  "rootKsAlias": "root_ca"
 }

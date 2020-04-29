@@ -2,7 +2,7 @@
   "metaDataSignerKeyStore": "MdSigner.jks",
   "metaDataSignerPass": "29c3957081208b23",
   "instanceNames": [
-    "sunet-dev"
+    "edusign"
   ],
   "metadataCacheDurationMinutes": 60,
   "metadataValidityMinutes": 10080
