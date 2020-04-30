@@ -13,6 +13,14 @@ export SIGNSERVICE_DATALOCATION=$SIGNSERVICE_DATALOCATION
 export DEBUG_MODE=$DEBUG_MODE
 
 #
+# TLS Settings
+#
+: ${TOMCAT_TLS_SERVER_KEY:=$SIGNSERVICE_DATALOCATION/tomcat/tomcat-key.pem}
+: ${TOMCAT_TLS_SERVER_CERTIFICATE:=$SIGNSERVICE_DATALOCATION/tomcat/tomcat-cert.pem}
+: ${TOMCAT_TLS_SERVER_CERTIFICATE_CHAIN:=$SIGNSERVICE_DATALOCATION/tomcat/tomcat-chain.pem}
+: ${TOMCAT_TLS_SERVER_KEY_TYPE:=RSA}
+
+#
 # System settings
 #
 : ${JVM_MAX_HEAP:=1536m}
@@ -23,6 +31,10 @@ export JAVA_OPTS="-XX:MaxPermSize=512m"
 export CATALINA_OPTS="\
           -Xmx${JVM_MAX_HEAP}\
           -Xms${JVM_START_HEAP}\
+          -Dtomcat.tls.server-key=$TOMCAT_TLS_SERVER_KEY \
+          -Dtomcat.tls.server-key-type=$TOMCAT_TLS_SERVER_KEY_TYPE \
+          -Dtomcat.tls.server-certificate=$TOMCAT_TLS_SERVER_CERTIFICATE \
+          -Dtomcat.tls.certificate-chain=$TOMCAT_TLS_SERVER_CERTIFICATE_CHAIN \
 "
 
 #

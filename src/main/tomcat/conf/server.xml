@@ -84,6 +84,28 @@
          Either JSSE or OpenSSL style configuration may be used regardless of
          the SSLImplementation selected. JSSE style configuration is used below.
     -->
+
+    <Connector port="8443"
+               protocol="HTTP/1.1"
+               scheme="https"
+               SSLEnabled="true"
+               connectionTimeout="20000"
+               acceptCount="100"
+               minSpareThreads="5"
+               maxThreads="200"
+               allowTrace="false"
+               maxHttpHeaderSize="65536"
+               xpoweredBy="false"
+               maxPostSize="100000"
+               compression="on">
+      <SSLHostConfig>
+        <Certificate certificateKeyFile="${tomcat.tls.server-key}"
+                     certificateFile="${tomcat.tls.server-certificate}"
+                     certificateChainFile="${tomcat.tls.certificate-chain}"
+                     type="${tomcat.tls.server-key-type}" />
+      </SSLHostConfig>
+    </Connector>
+
     <!--
     <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
                maxThreads="150" SSLEnabled="true">
