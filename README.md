@@ -1,6 +1,6 @@
 
 ---
-# CURRENT BUILD VERSION = 1.3.0
+# CURRENT BUILD VERSION = 1.3.1
 ---
 # docker-signservice
 
@@ -132,7 +132,24 @@ File | description
 `logo file`  |  The instance logo file according to the instance.json configuration
 `trustStore.jks`  |  The instance trust keystore. This keystore must contain the certificates of all trusted SP services authorized to send requests to this instance. The alias for each trusted certificate MUST be the EntityID of that SP entity.
 
-## 4. Running the docker container
+
+## 4. TLS configuration
+
+### 1.3.1
+TLS access to the docker container is exposed on port 8443
+Configuration is controlled by the following environment variables set at docker run, used to loacate the necessary key and certificates.
+
+Variable | Default value
+--- | ---
+TOMCAT_TLS_SERVER_KEY | $SIGNSERVICE_DATALOCATION/tomcat/tomcat-key.pem
+TOMCAT_TLS_SERVER_CERTIFICATE |  $SIGNSERVICE_DATALOCATION/tomcat/tomcat-cert.pem
+TOMCAT_TLS_SERVER_CERTIFICATE_CHAIN | $SIGNSERVICE_DATALOCATION/tomcat/tomcat-chain.pem
+TOMCAT_TLS_SERVER_KEY_TYPE | RSA
+
+A folder with sample keys and certificates are located in the default location in the signservice folder in the resources folder.
+
+
+## 5. Running the docker container
 
 The samples folder contains a sample docker deploy script `deploy.sh`:
 
