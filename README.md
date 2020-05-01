@@ -1,6 +1,6 @@
 
 ---
-# CURRENT BUILD VERSION = 1.3.1
+# CURRENT BUILD VERSION = 1.3.2
 ---
 # docker-signservice
 
@@ -149,7 +149,12 @@ TOMCAT_TLS_SERVER_KEY_TYPE | RSA
 A folder with sample keys and certificates are located in the default location in the signservice folder in the resources folder.
 
 
-## 5. Running the docker container
+## 5. Log level
+Log level is set by the env variable LOGLEVEL_SIGSERVER at docker run. For debug loggning set:
+
+> -e “LOGLEVEL_SIGSERVER=FINE”
+
+## 6. Running the docker container
 
 The samples folder contains a sample docker deploy script `deploy.sh`:
 

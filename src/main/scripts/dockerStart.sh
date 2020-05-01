@@ -13,6 +13,11 @@ export SIGNSERVICE_DATALOCATION=$SIGNSERVICE_DATALOCATION
 export DEBUG_MODE=$DEBUG_MODE
 
 #
+# LOG Levels  WARN, INFO, FINE
+#
+: ${LOGLEVEL_SIGSERVER:=INFO}
+
+#
 # TLS Settings
 #
 : ${TOMCAT_TLS_SERVER_KEY:=$SIGNSERVICE_DATALOCATION/tomcat/tomcat-key.pem}
@@ -35,6 +40,7 @@ export CATALINA_OPTS="\
           -Dtomcat.tls.server-key-type=$TOMCAT_TLS_SERVER_KEY_TYPE \
           -Dtomcat.tls.server-certificate=$TOMCAT_TLS_SERVER_CERTIFICATE \
           -Dtomcat.tls.certificate-chain=$TOMCAT_TLS_SERVER_CERTIFICATE_CHAIN \
+          -Dtomcat.loglevel.sigserv=$LOGLEVEL_SIGSERVER \
 "
 
 #
