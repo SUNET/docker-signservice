@@ -125,9 +125,6 @@
                                 <chmod perm="755"
                                        dir="${project.build.directory}/dependency/apache-tomcat-${tomcat.version}/bin"
                                        includes="**/*.sh"/>
-                                <echo>Copy Context xml</echo>
-                                <copy file="${project.basedir}/src/main/tomcat/context.xml"
-                                      tofile="${project.build.directory}/dependency/apache-tomcat-${tomcat.version}/webapps/manager/META-INF/context.xml"/>
                             </target>
                         </configuration>
                         <goals>

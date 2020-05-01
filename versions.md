@@ -6,6 +6,7 @@ Version | Comment | Date
 ---|---|---
 1.3.0 | Initial release | 2020-04-24
 1.3.1 | Updated with TLS support | 2020-04-30
+1.3.2 | Metadata cahe in daemon process. Improved logging | 2020-05-01
 
 ## Important Release Notes
 
@@ -22,3 +23,6 @@ TOMCAT_TLS_SERVER_CERTIFICATE_CHAIN | $SIGNSERVICE_DATALOCATION/tomcat/tomcat-ch
 TOMCAT_TLS_SERVER_KEY_TYPE | RSA
 
 A new tomcat folder with sample keys and certificates are located in the resources folder.
+
+### 1.3.2
+Se section 5 for information on how to set logging level by env variable.
