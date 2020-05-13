@@ -41,6 +41,7 @@ export CATALINA_OPTS="\
           -Dtomcat.tls.server-certificate=$TOMCAT_TLS_SERVER_CERTIFICATE \
           -Dtomcat.tls.certificate-chain=$TOMCAT_TLS_SERVER_CERTIFICATE_CHAIN \
           -Dtomcat.loglevel.sigserv=$LOGLEVEL_SIGSERVER \
+          -Dorg.apache.xml.security.ignoreLineBreaks=true \
 "
 
 #
