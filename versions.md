@@ -7,6 +7,7 @@ Version | Comment | Date
 1.3.0 | Initial release | 2020-04-24
 1.3.1 | Updated with TLS support | 2020-04-30
 1.3.2 | Metadata cahe in daemon process. Improved logging | 2020-05-01
+1.3.3 | Support for audit logging | 2020-05-14
 
 ## Important Release Notes
 
@@ -25,4 +26,7 @@ TOMCAT_TLS_SERVER_KEY_TYPE | RSA
 A new tomcat folder with sample keys and certificates are located in the resources folder.
 
 ### 1.3.2
-Se section 5 for information on how to set logging level by env variable.
+Se section 5.1 for information on how to set logging level by env variable.
+
+### 1.3.3
+Added support for audit logging to separate file as specified in section 5.2
