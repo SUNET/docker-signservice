@@ -1,6 +1,6 @@
 
 ---
-# CURRENT BUILD VERSION = 1.3.2
+# CURRENT BUILD VERSION = 1.3.3
 ---
 # docker-signservice
 
@@ -149,10 +149,22 @@ TOMCAT_TLS_SERVER_KEY_TYPE | RSA
 A folder with sample keys and certificates are located in the default location in the signservice folder in the resources folder.
 
 
-## 5. Log level
+## 5. Logging
+
+### 5.1 Log level
 Log level is set by the env variable LOGLEVEL_SIGSERVER at docker run. For debug loggning set:
 
 > -e “LOGLEVEL_SIGSERVER=FINE”
+
+### 5.2 Audit logging
+Signservice export audit logs to a separate file in the tomcat logs folder.
+The name of the audit log file is:
+
+> cs-sigserver-audit.{YYY-MM-DD}.log
+
+By default, audit logs are stored in 7 days before being removed from the log directory. The number of days all logs are retained before being delated can be changed by setting the environment variable `MAXLOGDAYS` at docker run. E.g:
+
+> -e "MAXLOGDAYS=90"
 
 ## 6. Running the docker container
 
