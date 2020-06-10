@@ -1,4 +1,4 @@
-# Proxy Service versions
+# Sign Service versions
 
 **Latest Current version: 1.0.0**
 
