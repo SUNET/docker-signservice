@@ -1,6 +1,6 @@
-# Proxy Service versions
+# Sign Service versions
 
-**Latest Current version: 1.0.0**
+**Latest Current version: 1.3.4**
 
 Version | Comment | Date
 ---|---|---
@@ -8,6 +8,7 @@ Version | Comment | Date
 1.3.1 | Updated with TLS support | 2020-04-30
 1.3.2 | Metadata cahe in daemon process. Improved logging | 2020-05-01
 1.3.3 | Support for audit logging | 2020-05-14
+1.3.4 | Extended logging of user mismatch | 2020-05-14
 
 ## Important Release Notes
 
