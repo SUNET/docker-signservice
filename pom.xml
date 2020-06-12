@@ -116,11 +116,13 @@
                                       overwrite="true">
                                     <fileset dir="${project.basedir}/src/main/tomcat/conf"/>
                                 </copy>
+<!--
                                 <echo>Copy tomcat lib files</echo>
                                 <copy todir="${project.build.directory}/dependency/apache-tomcat-${tomcat.version}/lib/"
                                       overwrite="true">
                                     <fileset dir="${project.basedir}/src/main/lib"/>
                                 </copy>
+-->
                                 <echo>Make tomcat executable</echo>
                                 <chmod perm="755"
                                        dir="${project.build.directory}/dependency/apache-tomcat-${tomcat.version}/bin"
