@@ -116,13 +116,6 @@
                                       overwrite="true">
                                     <fileset dir="${project.basedir}/src/main/tomcat/conf"/>
                                 </copy>
-<!--
-                                <echo>Copy tomcat lib files</echo>
-                                <copy todir="${project.build.directory}/dependency/apache-tomcat-${tomcat.version}/lib/"
-                                      overwrite="true">
-                                    <fileset dir="${project.basedir}/src/main/lib"/>
-                                </copy>
--->
                                 <echo>Make tomcat executable</echo>
                                 <chmod perm="755"
                                        dir="${project.build.directory}/dependency/apache-tomcat-${tomcat.version}/bin"
@@ -136,50 +129,7 @@
 
                 </executions>
             </plugin>
-
-            <!-- Support for Docker -->
-<!--
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.9</version>
-                <configuration>
-                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
-                    <tag>latest</tag>
-                    <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
-                </configuration>
-            </plugin>
--->
-
         </plugins>
     </build>
 
-    <profiles>
-
-<!--
-        <profile>
-            <id>buildwars</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <executions>
-                            <execution>&lt;!&ndash; Run our version calculation script &ndash;&gt;
-                                <id>Version Calculation</id>
-                                <phase>generate-sources</phase>
-                                <goals>
-                                    <goal>exec</goal>
-                                </goals>
-                                <configuration>
-                                    <executable>${basedir}/buildwars.sh</executable>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
--->
-    </profiles>
 </project>
