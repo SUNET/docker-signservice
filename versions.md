@@ -1,6 +1,6 @@
 # Sign Service versions
 
-**Latest Current version: 1.3.6**
+**Latest Current version: 1.3.7**
 
 Version | Comment | Date
 ---|---|---
@@ -11,6 +11,7 @@ Version | Comment | Date
 1.3.4 | Extended logging of user mismatch | 2020-05-14
 1.3.5 | Fixed possible Audit log error | 2020-05-16
 1.3.6 | Allow storage of SP entityID as service ID in AuthnContextExt | 2020-05-18
+1.3.7 | Fixed issue with malformed IssuerSerial in XAdES signatures  | 2020-08-17
 
 ## Important Release Notes
 
