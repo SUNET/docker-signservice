@@ -1,6 +1,6 @@
 
 ---
-# CURRENT BUILD VERSION = 1.3.7
+# CURRENT BUILD VERSION = 1.3.8
 ---
 # docker-signservice
 
