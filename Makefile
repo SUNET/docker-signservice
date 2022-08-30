@@ -1,4 +1,4 @@
-VERSION := 1.3.7
+VERSION := 1.3.11
 EIDAS_BUILD_ARGS := "--you --forgot --username --and --passw"
 -include local.mk
 
