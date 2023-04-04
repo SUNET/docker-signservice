@@ -24,9 +24,8 @@
     </developers>
 
     <properties>
-        <tomcat.version>9.0.34</tomcat.version>
+        <tomcat.version>9.0.73</tomcat.version>
         <docker.image.prefix>docker.eidastest.se:5000</docker.image.prefix>
-        <eidas.node.version>2.4.0</eidas.node.version>
     </properties>
 
     <repositories>
