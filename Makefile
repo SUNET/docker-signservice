@@ -1,10 +1,10 @@
-VERSION := 1.4.3
+VERSION := 1.4.5
 EIDAS_BUILD_ARGS := "--you --forgot --username --and --passw"
 -include local.mk
 
 all: build push
 
-build: 
+build:
 	./build.sh $(EIDAS_BUILD_ARGS) --version $(VERSION) -i signservice --tag $(VERSION)
 
 push:

@@ -1,4 +1,5 @@
-FROM docker.sunet.se/openjdk-jre-luna:ubuntu-luna7.2-jre8
+#FROM docker.sunet.se/openjdk-jre-luna:ubuntu-luna7.2-jre8
+FROM openjdk:8-jre
 
 #RUN mkdir /opt/docker
 #RUN mkdir /opt/docker/internal
